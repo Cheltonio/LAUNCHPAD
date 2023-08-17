@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LAUNCHPAD PORTAL</title>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js" defer></script>
+
+  <script src="init.js" defer></script>
+  
+  <script src="portal.js" defer></script>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+</head>
+
+<body>
+
+  <h1>LAUNCHPAD</h1>
+
+  <div id="register">
+    <img id="logo" src="assets/logo.png">
+    <button id="signupButton">SIGN UP</button>
+    <button id="loginButton">LOG IN</button>
+  </div>
+
+  <div id="signup">
+    <div>
+      <label>USERNAME:</label>
+      <input class="inputS" type="text">
+    </div>
+    <div>
+      <label>PASSWORD:</label>
+      <input class="inputS" type="password">
+    </div>
+    <div>
+      <label>CONFIRM PASSWORD:</label>
+      <input class="inputS" type="password">
+    </div>
+
+    <button id="create">CREATE ACCOUNT</button>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAUNCHPAD</title>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js" defer></script>
+
+  <script src="init.js" defer></script>
+  
+  <script src="main.js" defer></script>
+  
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="posts.css">
+
+  <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+</head>
+<body id="body">
+  
+  <h1>LAUNCHPAD</h1>
+
+  <div id="navBar" name="navBar">
+    <button class ="nav" id="toHome">HOME</button>
+    <button class ="nav" id="toAllPosts">BROWSE POSTS</button>
+    <button class ="nav" id="toMakePost">CREATE POST</button>
+    <button class ="nav" id="toProfile">PROFILE</button>
+    <button class ="nav" id="toAboutUs">ABOUT US</button>
+    <button class ="nav" id="signout">SIGN OUT</button>
+  </div>
+
+  <div class="page" id="login">
+    <div>
+      <label>USERNAME:</label>
+      <input class="inputL" type="text">
+    </div>
+    <div>
+      <label>PASSWORD:</label>
+      <input class="inputL" type="password">
+    </div>
+
+    <button id="signin" name="signin">SIGN IN</button>
+  </div>
+
+  <div class="page" id="home" name="home">
+    <div class="blurb">
+      <img id="startup" src="assets/startup.png">
+      <div id="header">
+        <h2>WELCOME</h2><h2>TO</h2><h2>LAUNCHPAD</h2><h2> - </h2><h2>MADE</h2><h2 class="emp">BY</h2><h2>INNOVATORS,</h2><h2 class="emp">FOR</h2><h2>INNOVATORS</h2>
+      </div>
+      <p>Here at LaunchPad, we've created a space for brilliant minds to share their latest projects, products, and startups. Reach out to those you see potential in, or garner funding and support from those who see potential in you!</p>
+    </div>
+
+    <div id="popular">
+      <img class="show" src=https://static.designboom.com/contest/files/dinink1.jpg>
+      <img class="show" src=https://img.buzzfeed.com/buzzfeed-static/static/2018-03/23/17/asset/buzzfeed-prod-web-07/sub-buzz-24308-1521839562-3.jpg>
+      <img class="show" src=http://cdn.shopify.com/s/files/1/1365/2497/products/bacon_bandages_grande.jpg?v=1470256062>
+    </div>
+  </div>
+  <div class="page" id="allPosts" name="allPosts"></div>
+  <div class="page" id="profile" name="profile">
+    <h2 id="profileName"></h2> 
+    <div id="bioDiv">
+      <p id="bio" name="bio"></p>
+      <input type="text" id="changeBio" name="changeBio"></input>
+      <button id="editBio" name="editBio"><img id="pencil" src="assets/edit.png"></button>
+    </div> <hr> <br>
+    <div id="myPosts" name="myPosts"> </div>
+  </div>
+  <div class="page" id="makePost" name="makePost">
+    <div id="selection">
+      <form>
+          <label for="title">NAME OF VENTURE:</label>
+          <input id="title" name="title" type="text">
+
+          <label for="type">TYPE OF VENTURE:</label>
+          <select id="type" name="type">
+            <option value="[demo]">DEMO</option>
+            <option value="[protoype]">PROTOTYPE</option>
+            <option value="[startup]">STARTUP</option>
+          </select>
+
+          <label for="link">IMAGE ADRESS:</label>
+          <input id="link" name="link" type="url">
+
+          <label for="desc">DESCRIPTION & CONTACTS:</label>
+          <textarea id="desc" name="desc"></textarea>
+      </form>
+    </div>
+    <div class="post" id="visualize" name="visualize">
+      <img class="pic" name="pic" src="assets/placeholder.jpg">
+      <div id="text">
+        <h3 id="titleV" name="titleV"></h3>
+        <p id="typeV" name="typeV"></p>
+        <p class="descV" id="descV" name="descV"></p>
+      </div>
+    </div> 
+    <div id="oop"><button id="submit" name="submit">POST</button></div>
+  </div>
+  <div class="page" id="aboutUs" name="aboutUs">
+    <div class="blurb" id="ab">
+      <img id="team" src="assets/team.png">
+      <p id="about">Here at LaunchPad, our only goal is to uplift others. Our initiative is to build a community, or better yet a family, which fosters innovation and helps see it through. The platform's biggest inspiration was the show "Shark Tank". We wanted to bring the benefits of opportunities like Shark Tank to a wider audience, which could only be done via the help of our community. If we may bring one inventor's dream to fruition, then we would gladly consider it a success. Join our family today and see how far you can go!</p>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p>Twitter</p>
+      <p>LinkedIn</p>
+      <p>Instagram</p>
+    </div>
+    <div id="contacts">
+      <p>contact@launchpad.com</p>
+      <p>123 - 456 - 7890</p>
+    </div>
+    <div id="stuff">
+      <p>FAQ</p>
+      <p>HELP</p>
+    </div>
+    &copy; 2023 Launchpad
+  </footer>
+</body>
+</html>
