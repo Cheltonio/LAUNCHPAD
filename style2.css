@@ -278,7 +278,7 @@ textarea {
   height:100%;
 }
 h3 {
-  font-size: 50px;
+  font-size: 30px;
   height: 48px;
   display:flex;
   align-items:center;
@@ -373,7 +373,7 @@ footer p:hover {
     width:750px;
   }
   h3 {
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 @media(max-width:1366px) {

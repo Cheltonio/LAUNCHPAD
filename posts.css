@@ -64,3 +64,10 @@ hr {
 .trash:hover {
   content: url("assets/open.png");
 }
+
+@media(max-width:1720px) {
+  .icons {
+    height:30px;
+    width:30px;
+  }
+}

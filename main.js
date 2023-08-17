@@ -82,7 +82,7 @@ document.getElementById("toMakePost").onclick = function() {
   last[0] = makePost;
 }
 title.oninput = function() {
-  if(title.value.length>18) title.value = title.value.slice(0,title.value.length-1);
+  if(title.value.length>20) title.value = title.value.slice(0,title.value.length-1);
   else titleV.innerHTML = title.value;
 }
 type.oninput = function() {
