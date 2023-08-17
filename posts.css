@@ -71,3 +71,8 @@ hr {
     width:30px;
   }
 }
+@media(max-width:1366px) {
+  .space {
+    display:flex;
+  }
+}
